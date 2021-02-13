@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', sans-serif, monospace;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: inline;
+
+    z-index: -1;
+    background: #890024;
+    background-image: linear-gradient(
+      115deg,
+      rgba(153, 0, 51, 0.9),
+      rgba(204, 0, 51, 0.7)
+    ),
+    url(https://cdn.wallpapersafari.com/65/17/9LAx2E.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+}
+
+#dr-pepper-logo {
+    height: 15%;
+}
+
+form {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 0 auto;
+    width: 600px;
+  
+    background: #890025e7;
+}
+
+#name,
+#email,
+#number,
+.dropdown-favorite-flavor {
+    /*these are text inputs*/
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+#name-label,
+#email-label,
+#number-label,
+p {
+    font-size: 1.5rem;
+}
+
+#form-group
+select {
+    /* these are text fields for name,email,number*/
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.form-inputs {
+    /*set the form boxes to stretch*/
+    width: 100%;
+    border-radius: .4rem;
+}
+
+.textarea-comments {
+    resize: vertical;
+    overflow: auto; 
+    padding-bottom: 1rem;
+}
+ 
+input[type="submit"] {
+    border-color: white;
+    cursor: pointer;
+    width: 100%;
+    min-height: 50px;
+    font-family: 'Fredoka One', sans-serif, monospace;
+    font-size: 2rem;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    animation-name: submitAnim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+input[type="submit"]:focus {
+    background: white;
+    animation-duration: 0s;
+}
+
+@keyframes submitAnim {
+    from{ font-size: 2rem; background-color:#ff00008e; }
+    to { font-size: 1.95rem; background-color:#ff009da1; }
+}
