@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@font-face {
+  font-family: EntezareZohoor2;
+  src: local("DrPeppers") format("woff");
+}
+
+:root {
+  --color-burgundy: #890024;
+  --color-burgundy-alpha: rgba(204, 0, 51, 0.8);
+}
+
+body {
+  font-family: 'Fredoka One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vm;
+  /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+  text-shadow: 2px 2px black;
+  line-height: 1.4;
+  color: white;
+
+  z-index: -1;
+  background: var(--color-burgundy);
+  background-image: linear-gradient(
+      115deg,
+      rgba(153, 0, 51, 0.8),
+      rgba(204, 0, 51, 0.7)
+    ),
+    url(https://cdn.wallpapersafari.com/65/17/9LAx2E.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  text-align: left;
+  width: 75%;
+  height: 100%;
+  margin: 3.125rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 150px 1fr;
+  background-color: blue;
+}
+
+.field-forms,
+.radio-buttons,
+.dropdown-menu,
+.checkbox{
+  width: 200px;
+  height: 150px;
+  margin: 5px auto
+}
+
+.submit {
+  width: 500px;
+  height: 50px;
+  outline-style: solid;
+  outline-color: var(--color-burgundy);
+  outline-width: 5px;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {outline-color: var(--color-burgundy-alpha)}
+  to {outline-color: var(--color-burgundy)}
+}
