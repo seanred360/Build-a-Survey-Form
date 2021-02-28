@@ -13,7 +13,7 @@ body {
       rgba(153, 0, 51, 0.9),
       rgba(204, 0, 51, 0.7)
     ),
-    url(https://cdn.wallpapersafari.com/65/17/9LAx2E.png);
+    url(resources/background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
